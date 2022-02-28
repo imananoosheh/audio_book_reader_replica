@@ -4,14 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>You Take I read</title>
     <!-- v2 -->
-    <script defer src="https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"></script>
+    <script
+      defer
+      src="https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"
+    ></script>
     <script src="script.js" defer></script>
-
   </head>
   <body>
+    <div>
       <video width="720" height="560" autoplay muted></video>
-      <pre data-text style="font-size: 2rem; font-family:inherit; width: 100%; white-space: pre-wrap;"></pre>
+      <button class="shoot-button" data-shoot-button></button>
+      <pre
+        data-text
+        style="
+          font-size: 2rem;
+          font-family: inherit;
+          width: 100%;
+          white-space: pre-wrap;
+        "
+      ></pre>
+    </div>
   </body>
 </html>
