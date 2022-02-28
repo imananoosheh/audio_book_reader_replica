@@ -1,14 +1,89 @@
-.shoot-button {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgba(129, 255, 255, 0.74);
-    border: 5px solid rgba(148, 255, 228, 0.61);
-    top: 490px;
-    left: 650px;
+button {
+    background-color: transparent;
+    border: 0px;
 }
-.shoot-button:active{
-    background-color: rgba(148, 251, 255, 0.822);
-    border-color: rgba(26, 255, 255, 0.74);
+
+.photo-button {
+    width: 100px;
+    height: 100px;
+    top: 490px;
+    left: 660px;
+    margin-top: -100px;
+    margin-left: -100px;
+    position: absolute;
+}
+
+.circle {
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    bottom: 12%;
+    right: 12%;
+    border-radius: 100%;
+    background-color: #ffffff;
+    opacity: 0;
+}
+
+.ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    border-radius: 100%;
+    border: 0.5em solid #ffffff;
+    opacity: 0.8;
+}
+
+.button-guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 1s linear infinite;
+    /* transform: rotate(55deg); */
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(70deg);
+        opacity: 0;
+    }
+    50%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(-55deg);
+        opacity: 0;
+    }
+}
+
+svg {
+    fill: currentColor;
+    height: auto;
+    /* max-width: 66vmin; */
+    transform-origin: center;
+    width: 150px;
+    fill: #ffffff;
+    transform: scale(1.8);
+}
+
+
+
+.photo-button .circle,
+.photo-button .ring {
+    transition: all 0.25s;
+}
+
+.photo-button:hover .circle {
+    opacity: 1;
+}
+
+.photo-button:active .ring {
+    opacity: 1;
+}
+
+.photo-button:active .circle {
+    opacity: 0.5;
 }

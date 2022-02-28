@@ -1,5 +1,6 @@
 const video = document.querySelector("video");
 const textDiv = document.querySelector("[data-text]");
+const photoButton = document.querySelector("[data-photo-button]");
 
 async function setup() {
   const stream = await navigator.mediaDevices.getUserMedia({ video: true });
@@ -15,9 +16,8 @@ async function setup() {
     canvas.width = video.width;
     canvas.height = video.height;
 
-    document.addEventListener("keypress", async (e) => {
+    photoButton.addEventListener("click", async (e) => {
       console.time();
-      if (e.code !== "Space") return;
       canvas.getContext("2d").drawImage(video, 0, 0, video.width, video.height);
       const {
         data: { text },
