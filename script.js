@@ -9,8 +9,8 @@ async function setup() {
   video.addEventListener("playing", async () => {
     const worker = Tesseract.createWorker();
     await worker.load();
-    await worker.loadLanguage("eng");
-    await worker.initialize();
+    await worker.loadLanguage('eng');
+    await worker.initialize('eng');
 
     const canvas = document.createElement("canvas");
     canvas.width = video.width;
