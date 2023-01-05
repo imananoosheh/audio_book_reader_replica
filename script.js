@@ -1,3 +1,5 @@
+import Tesseract from "tesseract.min.js"
+// require("tesseract.min.js")
 const video = document.querySelector("video");
 const textDiv = document.querySelector("[data-text]");
 const photoButton = document.querySelector("[data-photo-button]");

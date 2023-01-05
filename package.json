@@ -1,0 +1,25 @@
+{
+  "name": "audio_book_reader_replica",
+  "version": "1.0.0",
+  "homepage": "https://imananoosheh.github.io/audio_book_reader_replica/",
+  "description": "* Scaning a text using camera * Optical character recognition * Speaking the recognized text",
+  "main": "script.js",
+  "scripts": {
+    "start": "",
+    "predeploy": "",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imananoosheh/audio_book_reader_replica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imananoosheh/audio_book_reader_replica/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
